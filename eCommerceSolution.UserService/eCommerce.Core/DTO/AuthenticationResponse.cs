@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace eCommerce.Core.DTO;
+
 public record AuthenticationResponse(
   Guid UserID,
   string? Email,
@@ -10,4 +7,10 @@ public record AuthenticationResponse(
   string? Gender,
   string? Token,
   bool Sucess
-  );
+  )
+{
+  //Parameterless constructor
+  public AuthenticationResponse() : this(default, default, default, default, default, default)
+{
+}
+}
