@@ -4,6 +4,7 @@ using eCommerce.Core;
 //using eCommerce.API.Middlewares;
 using System.Text.Json.Serialization;
 using eCommerce.Core.Mappers;
+using eCommerce.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -29,7 +29,7 @@ namespace eCommerce.API.Controllers
             //Call the UsersService to handle registration
             AuthenticationResponse? authenticationResponse = await _usersService.Register(registerRequest);
 
-            if (authenticationResponse == null || authenticationResponse.Sucess == false)
+            if (authenticationResponse == null || authenticationResponse.Success == false)
             {
                 return BadRequest(authenticationResponse);
             }
@@ -50,7 +50,7 @@ namespace eCommerce.API.Controllers
 
             AuthenticationResponse? authenticationResponse = await _usersService.Login(loginRequest);
 
-            if (authenticationResponse == null || authenticationResponse.Sucess == false)
+            if (authenticationResponse == null || authenticationResponse.Success == false)
             {
                 return Unauthorized(authenticationResponse);
             }
