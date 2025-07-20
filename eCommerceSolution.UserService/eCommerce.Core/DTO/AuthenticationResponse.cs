@@ -6,11 +6,11 @@ public record AuthenticationResponse(
   string? PersonName,
   string? Gender,
   string? Token,
-  bool Sucess
+  bool Success
   )
 {
-  //Parameterless constructor
-  public AuthenticationResponse() : this(default, default, default, default, default, default)
-{
-}
+    //Parameterless constructor
+    public AuthenticationResponse() : this(default, default, default, default, default, default)
+    {
+    }
 }

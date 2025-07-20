@@ -1,14 +1,9 @@
 ﻿using AutoMapper;
 using eCommerce.Core.DTO;
 using eCommerce.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace eCommerce.Core.Mappers
-{ 
+namespace eCommerce.Core.Mappers;
+
 public class ApplicationUserMappingProfile : Profile
 {
     public ApplicationUserMappingProfile()
@@ -22,5 +17,4 @@ public class ApplicationUserMappingProfile : Profile
           .ForMember(dest => dest.Token, opt => opt.Ignore())
           ;
     }
-}
 }

@@ -58,5 +58,4 @@ namespace eCommerce.API.Controllers
             return Ok(authenticationResponse);
         }
     }
-
 }
